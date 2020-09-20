@@ -1,0 +1,132 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Cannot create GC thread. Out of system resources.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (gcTaskThread.cpp:48), pid=10440, tid=10460
+#
+# JRE version:  (8.0_45-b15) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.45-b02 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000221e000):  JavaThread "Unknown thread" [_thread_in_vm, id=10460, stack(0x0000000002530000,0x0000000002630000)]
+
+Stack: [0x0000000002530000,0x0000000002630000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x32b57a]
+V  [jvm.dll+0x279873]
+V  [jvm.dll+0x27a509]
+V  [jvm.dll+0x271825]
+V  [jvm.dll+0x3ea038]
+V  [jvm.dll+0x3e9cfc]
+V  [jvm.dll+0x3e9f8c]
+V  [jvm.dll+0x3eb4b0]
+V  [jvm.dll+0xf1207]
+V  [jvm.dll+0xf1b64]
+V  [jvm.dll+0x20f057]
+V  [jvm.dll+0x240e0a]
+V  [jvm.dll+0x15ba41]
+C  [java.exe+0x216e]
+C  [java.exe+0xcce7]
+C  [java.exe+0xcd7b]
+C  [kernel32.dll+0x1f56d]
+C  [ntdll.dll+0x33281]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000221e000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=10460, stack(0x0000000002530000,0x0000000002630000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x000000013f360000 - 0x000000013f397000 	C:\Program Files\Java\jdk1.8.0_45\bin\java.exe
+0x0000000077170000 - 0x000000007731b000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076f50000 - 0x000000007706f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd180000 - 0x000007fefd1eb000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefd9b0000 - 0x000007fefda8b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefdb30000 - 0x000007fefdbcf000 	C:\Windows\system32\msvcrt.dll
+0x000007fefdbd0000 - 0x000007fefdbef000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe2e0000 - 0x000007fefe40e000 	C:\Windows\system32\RPCRT4.dll
+0x0000000077070000 - 0x000000007716a000 	C:\Windows\system32\USER32.dll
+0x000007fefd580000 - 0x000007fefd5e7000 	C:\Windows\system32\GDI32.dll
+0x000007fefded0000 - 0x000007fefdede000 	C:\Windows\system32\LPK.dll
+0x000007fefde00000 - 0x000007fefdeca000 	C:\Windows\system32\USP10.dll
+0x000007fefbb60000 - 0x000007fefbd54000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7600.16385_none_fa645303170382f6\COMCTL32.dll
+0x000007fefe0e0000 - 0x000007fefe151000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefddd0000 - 0x000007fefddfe000 	C:\Windows\system32\IMM32.DLL
+0x000007fefd800000 - 0x000007fefd909000 	C:\Windows\system32\MSCTF.dll
+0x000000005c450000 - 0x000000005c522000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\msvcr100.dll
+0x0000000052fd0000 - 0x0000000053853000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\server\jvm.dll
+0x000007feeeb90000 - 0x000007feeeb99000 	C:\Windows\system32\WSOCK32.dll
+0x000007feff400000 - 0x000007feff44d000 	C:\Windows\system32\WS2_32.dll
+0x000007feff470000 - 0x000007feff478000 	C:\Windows\system32\NSI.dll
+0x000007fefadb0000 - 0x000007fefadeb000 	C:\Windows\system32\WINMM.dll
+0x000007fefcb90000 - 0x000007fefcb9c000 	C:\Windows\system32\VERSION.dll
+0x0000000077340000 - 0x0000000077347000 	C:\Windows\system32\PSAPI.DLL
+0x000000005c440000 - 0x000000005c44f000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\verify.dll
+0x000000005c410000 - 0x000000005c439000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\java.dll
+0x000000005aac0000 - 0x000000005aad6000 	C:\Program Files\Java\jdk1.8.0_45\jre\bin\zip.dll
+0x000007fef1e80000 - 0x000007fef1fa5000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: Cliente.Jogo
+java_class_path (initial): C:\Users\Edgar\Documents\NetBeansProjects\BatalhaNaval\build\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\system32\wbem;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\ProgramData\Oracle\Java\javapath;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\Skype\Phone;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Common Files\Microsoft Shared\Windows Live
+USERNAME=Edgar
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7600 (6.1.7600.16385)
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, aes, clmul, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4071184k(714592k free), swap 8230820k(4840k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.45-b02) for windows-amd64 JRE (1.8.0_45-b15), built on Apr 30 2015 12:40:44 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Sep 25 18:39:01 2016
+elapsed time: 1 seconds (0d 0h 0m 1s)
+
